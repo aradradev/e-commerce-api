@@ -362,7 +362,7 @@
 - [x] add dev command "nodemon app.js"
 - [x] change start to "node app.js"
 - [x] setup node version in package.json
-- [] "engines": {"node": "14.x"}
+- [x] "engines": {"node": "14.x"}
 - [] Procfile "web: node app.js"
 - [] remove existing git repo
 - [] rm -rf .git - mac,

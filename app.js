@@ -7,7 +7,6 @@ const express = require('express')
 const app = express()
 
 // Middleware for more packages morgan
-const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload')
 
@@ -46,17 +45,10 @@ app.use(mongoSanitize())
 app.use(cors())
 
 // Other built in middleware
-app.use(morgan('tiny'))
 app.use(express.json())
 app.use(cookieParser(process.env.JWT_SECRET))
 app.use(express.static('./public'))
 app.use(fileUpload())
-
-app.get('/', (req, res) => {
-  // console.log(req.cookies)
-  console.log(req.signedCookies)
-  res.send('<h1>E-Commerce API</h1>')
-})
 
 // Routes middleware
 app.use('/api/v1/auth', authRouter)

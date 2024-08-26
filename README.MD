@@ -370,7 +370,7 @@
 - [x] git add .
 - [x] git commit -m "initial commit"
 - [x] heroku login
-- [] heroku create "App Name"
+- [x] heroku create "App Name"
 - [] git remote -v
 - [] setup env vars in GUI
 - [] git push heroku master/main

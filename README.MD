@@ -361,7 +361,7 @@
 - [x] remove/copy from the main repo
 - [x] add dev command "nodemon app.js"
 - [x] change start to "node app.js"
-- [] setup node version in package.json
+- [x] setup node version in package.json
 - [] "engines": {"node": "14.x"}
 - [] Procfile "web: node app.js"
 - [] remove existing git repo

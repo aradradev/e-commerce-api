@@ -371,6 +371,6 @@
 - [x] git commit -m "initial commit"
 - [x] heroku login
 - [x] heroku create "App Name"
-- [] git remote -v
-- [] setup env vars in GUI
+- [x] git remote -v
+- [x] setup env vars in GUI
 - [] git push heroku master/main

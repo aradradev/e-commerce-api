@@ -364,7 +364,7 @@
 - [x] setup node version in package.json
 - [x] "engines": {"node": "14.x"}
 - [x] Procfile "web: node app.js"
-- [] remove existing git repo
+- [x] remove existing git repo
 - [] rm -rf .git - mac,
 - [] git init
 - [] git add .

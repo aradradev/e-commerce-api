@@ -366,7 +366,7 @@
 - [x] Procfile "web: node app.js"
 - [x] remove existing git repo
 - [x] rm -rf .git - mac,
-- [] git init
+- [x] git init
 - [] git add .
 - [] git commit -m "initial commit"
 - [] heroku login

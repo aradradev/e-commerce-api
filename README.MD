@@ -363,7 +363,7 @@
 - [x] change start to "node app.js"
 - [x] setup node version in package.json
 - [x] "engines": {"node": "14.x"}
-- [] Procfile "web: node app.js"
+- [x] Procfile "web: node app.js"
 - [] remove existing git repo
 - [] rm -rf .git - mac,
 - [] git init

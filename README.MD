@@ -1,376 +1,143 @@
-## Hosted Project
+<a name="readme-top"></a>
 
-[E-Commerce API Render URL](https://node-course-e-commerce.onrender.com/)
+<div align="center">
+  <h3><b>E-Commerce-API</b></h3>
+  <img src='images/TestLogo.svg' alt='image logo' />
+</div>
 
-#### Setup Basic Express Server
+# 📗 Table of Contents
 
-- [x] import express and assign to variable
-- [x] setup start port variable (5000) and start function
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 E-Commerce-API ](#-e-commerce-api-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
-#### Connect To DB
+# 📖 E-Commerce-API <a name="about-project"></a>
 
-- [x] get connection string
-- [x] setup .env with MONGO_URL variable and assign the value
-- [x] import 'dotenv' and setup package
-- [x] import connect() and invoke in the starter
-- [x] restart the server
-- [x] mongoose V6 info
+**E-Commerce-API** E-Commerce-API is to help store keepers to make their business online with their customers.
 
-#### Basic Routes and Middleware
+## 🛠 Built With <a name="built-with"></a>
 
-- [x] setup / GET Route
-- [x] setup express.json() middleware
-- [x] setup 404 and errorHandler middleware
-- [x] import 'exress-async-errors' package
+### Tech Stack <a name="tech-stack"></a>
 
-#### 404 vs ErrorHandler Middleware
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="">Nodejs</a></li>
+    <li><a href="">Postman</a></li>
+  </ul>
+</details>
 
-#### Morgan Pacakge
+### Key Features <a name="key-features"></a>
 
-- [Morgan Package](https://www.npmjs.com/package/morgan)
+- **User Experience**: N/A.
+- **Notifications**: N/A.
+- **Visual Elements**: N/A.
+- **Story Feature**: N/A.
 
-#### User Model
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [x] create models folder and User.js file
-- [x] create schema with name,email, password (all type:String)
-- [x] export mongoose model
+## 🚀 Live Demo <a name="live-demo"></a>
 
-#### Validator Package
+- [Demo LIVE](https://e-commerce224-c05c34dfb56b.herokuapp.com/)
 
-- [Validator](https://www.npmjs.com/package/validator)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Auth Routes Structure
+## 💻 Getting Started <a name="getting-started"></a>
 
-- [x] create controllers folder
-- [x] add authController file
-- [x] export (register,login,logout) functions
-- [x] res.send('some string value')
-- [x] create routes folder
-- [x] setup authRoutes file
-- [x] import all controllers
-- [x] setup three routes
-- [x] post('/register') post('/login') get('/logout')
-- [x] import authRoutes as authRouter in the app.js
-- [x] setup app.use('/api/v1/auth', authRouter)
+To get a local copy up and running, follow these steps.
 
-#### Test Routes in Postman
+### Prerequisites
 
-#### Register Controller
+- Nodejs
+- React - (CRA)
+- Browser (Chrome)
 
-- [x] create user
-- [x] send response with entire user (only while testing)
-- [x] check if email already in use (schema and controller)
-- [x] ignore 'role'
-- [x] alternative 'admin' setup
+### Deployment
 
-#### Handle Password
+To deploy the application, follow these steps:
 
-- [x] UserSchema.pre('save') - hook
-- this points to User
-- bcrypt.genSalt - number of rounds
-- bcrypt.hash
+1. Install the required packages by running the following command in the root directory of the project:
 
-#### JWT
+```
+   User your favorite website to host it
+```
 
-- [x] require 'jsonwebtoken' package
-- [x] create jwt - jwt.sign(payload,secret,options)
-- [x] verify jwt - jwt.verify(token,secret)
-- [x] add variables in .env JWT_SECRET=jwtSecret and JWT_LIFETIME=1d
-- [x] restart the server !!!!
-- [x] refactor code, create jwt functions in utils
-- [x] refactor cookie code
-- [x] setup func attachCookiesToResponse
-- [x] accept payload(res, tokenUser)
-- [x] create token, setup cookie
-- [x] optionally send back the response
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Login Route
+<!-- AUTHORS -->
 
-- [x] check if email and password exist, if one missing return 400
-- [x] find user, if no user return 401
-- [x] check password, if does not match return 401
-- [x] if everything is correct, attach cookie
-      and send back the same response as in register
+## 👥 Authors <a name="author"></a>
 
-#### Logout Route
+👤 **Jalloh**
 
-- [x] set token cookie equal to some string value
-- [x] set expires:new Date(Date.now())
+- GitHub: [@aradradev](https://github.com/aradradev)
+- LinkedIn: [Abdourahmane Jalloh](https://www.linkedin.com/in/abdul-jalloh)
 
-#### User Routes Structure
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [x] add userController file
-- [x] export (getAllUsers,getSingleUser,showCurrentUser,updateUser,updateUserPassword) functions
-- [x] res.send('some string value')
-- [x] setup userRoutes file
-- [x] import all controllers
-- [x] setup just one route - router.route('/').get(getAllUsers);
-- [x] import userRoutes as userRouter in the app.js
-- [x] setup app.use('/api/v1/users', userRouter)
+<!-- FUTURE FEATURES -->
 
-#### GetAllUsers and GetSingleUser
+## 🔭 Future Features <a name="future-features"></a>
 
-- [x] Get all users where role is 'user' and remove password
-- [x] Get Single User where id matches id param and remove password
-- [x] If no user 404
+- N/A
 
-#### Authenticate User Setup
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Auth User Complete
+<!-- CONTRIBUTING -->
 
-#### Authorize Permissions Setup
+## 🤝 Contributing <a name="contributing"></a>
 
-- [x] hardcode
+Contributions, issues, and feature requests are welcome!
 
-#### Authorize Permissions Complete
+Feel free to check the [issues page](../).
 
-- [x] introduce params
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### ShowCurrentUser
-
-- [x] get user from req
-- [x] send response with user
+<!-- SUPPORT -->
 
-#### UpdateUserPassword
+## ⭐️ Show your support <a name="support"></a>
 
-- [x] almost identical to login user
-- [x] add authenticateUser middleware in the route
-- [x] check for oldPassword and newPassword in the body
-- [x] if one missing 400
-- [x] look for user with req.user.userId
-- [x] check if oldPassword matches with user.comparePassword
-- [x] if no match 401
-- [x] if everything good set user.password equal to newPassword
-- [x] await user.save()
-
-#### createTokenUser in Utils
-
-- [x] create a file in utils (createTokenUser)
-- [x] setup a function that accepts user object and returns userToken object
-- [x] export as default
-- [x] setup all the correct imports/exports and refactor existing code
-
-#### updateUser with User.findOneAndUpdate()
-
-- [x] add authenticateUser middleware in the route
-- [x] check for name and email in the body
-- [x] if one is missing, send 400 (optional)
-- [x] use findOneAndUpdate()
-- [x] create token user, attachCookiesToResponse and send back the tokenUser
+If you like this project please give it a star!
 
-#### updateUser with user.save()
-
-#### Setup and Apply checkPermissions()
-
-#### Product Model
-
-- [x] create Product.js in models folder
-- [x] create Schema
-- [x] name : {type:String}
-- [x] price: {type:Number}
-- [x] description: {type:String}
-- [x] image: {type:String}
-- [x] category: {type:String}
-- [x] company: {type:String}
-- [x] colors: {type:[]}
-- [x] featured: {type:Boolean}
-- [x] freeShipping: {type:Boolean}
-- [x] inventory:{type:Number}
-- [x] averageRating:{type:Number}
-- [x] user
-- [x] set timestamps
-- [x] export Product model
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Product Structure
+<!-- ACKNOWLEDGEMENTS -->
 
-- [x] add productController file in controllers
-- [x] export (createProduct, getAllProducts,
-      getSingleProduct, updateProduct, deleteProduct, uploadImage) functions
-- [x] res.send('function name')
-- [x] setup productRoutes file in routes
-- [x] import all controllers
-- [x] only getAllProducts and getSingleProduct accessible to public
-- [x] rest only by admin (setup middlewares)
-- [x] typical setup
-- [x] router.route('/uploadImage').post(uploadImage)
-- [x] import productRoutes as productRouter in the app.js
-- [x] setup app.use('/api/v1/products', productRouter)
-
-#### Product Routes in Postman
-
-#### Create Product
-
-- [x] create user property on req.body and set it equal to userId (req.user)
-- [x] pass req.body into Product.create
-- [x] send back the product
-
-#### Remaining Controllers (apart from uploadImage)
-
-- [x] getAllProducts
-- [x] getSingleProduct
-- [x] updateProduct
-- [x] deleteProduct
-- [x] typical CRUD, utilize (task or job) project
-- [x] remember we check already for role 'admin'
-
-#### Upload Image
-
-- [x] if some question, re-watch 07-file-upload
-- [x] images folder with two images
-
-#### Review Model
-
-- [x] create Review.js in models folder
-- [x] create Schema
-- [x] rating : {type:Number}
-- [x] title: {type:String}
-- [x] comment: {type:String}
-- [x] user
-- [x] product
-- [x] set timestamps
-- [x] export Review model
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-#### Review Structure
+I would like to thank all future contribution.
 
-- [x] add reviewController file in controllers
-- [x] export (createReview, getAllReviews, getSingleReview, updateReview, deleteReview) functions
-- [x] res.send('function name')
-- [x] setup reviewRoutes file in routes
-- [x] import all controllers
-- [x] only getAllReviews and getSingleReview accessible to public
-- [x] rest only to users (setup middleware)
-- [x] typical REST setup
-- [x] import reviewRoutes as reviewRouter in the app.js
-- [x] setup app.use('/api/v1/reviews', reviewRouter)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Create Review
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- [x] check for product in the req.body
-- [x] attach user property (set it equal to req.user.userId) on to req.body
-- [x] create review
-- [x] don't test yet
+- **Question?**
 
-#### Get All Reviews and Get Single Review
+  N/A.
 
-- [x] both public routes, typical setup
+- **Question?**
 
-#### Delete Review
+  N/A.
 
-- [x] get id from req.params
-- [x] check if review exists
-- [x] if no review, 404
-- [x] check permissions (req.user, review.user)
-- [x] use await review.remove()
-- [x] send back 200
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Update Review
-
-- [x] get id from req.params
-- [x] get {rating, title comment} from req.body
-- [x] check if review exists
-- [x] if no review, 404
-- [x] check permissions
-- [x] set review properties equal to rating, title, comment
-- [x] use await review.save()
-- [x] send back 200
-
-#### Populate
-
-#### Virtuals
-
-#### Get Single Product Reviews
-
-#### Remove All Reviews
-
-#### Aggregation Pipeline - Atlas and Code
-
-#### Order Schema
-
-- [x] create Order.js in models folder
-- [x] create Schema
-- [x] tax : {type:Number}
-- [x] shippingFee: {type:Number}
-- [x] subtotal: {type:Number}
-- [x] total: {type:Number}
-- [x] orderItems:[]
-- [x] status:{type:String}
-- [x] user
-- [x] clientSecret:{type:String}
-- [x] paymentId:{type:String}
-- [x] set timestamps
-- [x] export Order model
-
-#### Order Structure
-
-- [x] add orderController file in controllers
-- [x] export (getAllOrders, getSingleOrder, getCurrentUserOrders,
-      createOrder, updateOrder) functions
-- [x] res.send('function name')
-- [x] setup orderRoutes file in routes
-- [x] import all controllers
-- [x] authenticate user in all routes
-- [x] getAllOrders admin only
-- [x] typical REST setup
-- [x] router.route('/showAllMyOrders').get(getCurrentUserOrders)
-- [x] import orderRoutes as orderRouter in the app.js
-- [x] setup app.use('/api/v1/orders', orderRouter)
-
-#### Order in Postman
-
-#### Create Order
-
-- [x] most complex
-
-#### Get All Orders and Get Single Order
-
-- [x] getAllOrders - admin only
-- [x] getSingleOrder - chechPermissions
-
-#### Get Current User Orders
-
-- [x] find orders where user is equal to req.user.userId
-
-#### Update Order
-
-- [x] get order id
-- [x] get paymentIntentId (req.body)
-- [x] get order
-- [x] if does not exist - 404
-- [x] check permissions
-- [x] set paymentIntentId and status as 'paid'
-- [x] order.save()
-
-#### Create Docs
-
-- [x] [Docgen Library] (https://github.com/thedevsaddam/docgen)
-- [x] Export Postman Collection
-- [x] docgen build -i fileName.json -o index.html
-- [x] create index.html in public
-
-#### Security Packages
-
-- [x] express-rate-limiter
-- [x] helmet
-- [x] xss-clean
-- [x] express-mongo-sanitize
-- [x] cors (cookies!!!!)
-
-#### Deploy on Heroku
-
-- [x] heroku account and heroku cli
-- [x] remove/copy from the main repo
-- [x] add dev command "nodemon app.js"
-- [x] change start to "node app.js"
-- [x] setup node version in package.json
-- [x] "engines": {"node": "14.x"}
-- [x] Procfile "web: node app.js"
-- [x] remove existing git repo
-- [x] rm -rf .git - mac,
-- [x] git init
-- [x] git add .
-- [x] git commit -m "initial commit"
-- [x] heroku login
-- [x] heroku create "App Name"
-- [x] git remote -v
-- [x] setup env vars in GUI
-- [x] git push heroku master/main
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

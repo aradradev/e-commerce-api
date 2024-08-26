@@ -365,7 +365,7 @@
 - [x] "engines": {"node": "14.x"}
 - [x] Procfile "web: node app.js"
 - [x] remove existing git repo
-- [] rm -rf .git - mac,
+- [x] rm -rf .git - mac,
 - [] git init
 - [] git add .
 - [] git commit -m "initial commit"

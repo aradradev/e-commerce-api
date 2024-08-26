@@ -367,7 +367,7 @@
 - [x] remove existing git repo
 - [x] rm -rf .git - mac,
 - [x] git init
-- [] git add .
+- [x] git add .
 - [] git commit -m "initial commit"
 - [] heroku login
 - [] heroku create "App Name"

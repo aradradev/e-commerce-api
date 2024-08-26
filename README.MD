@@ -368,7 +368,7 @@
 - [x] rm -rf .git - mac,
 - [x] git init
 - [x] git add .
-- [] git commit -m "initial commit"
+- [x] git commit -m "initial commit"
 - [] heroku login
 - [] heroku create "App Name"
 - [] git remote -v

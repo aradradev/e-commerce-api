@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Demo LIVE](https://e-Commerce-API-3d20226d2e69.herokuapp.com/)
+- [Demo LIVE](https://e-commerce224-c05c34dfb56b.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

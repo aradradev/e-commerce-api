@@ -2,7 +2,6 @@
 
 <div align="center">
   <h3><b>E-Commerce-API</b></h3>
-  <img src='images/TestLogo.svg' alt='image logo' />
 </div>
 
 # 📗 Table of Contents

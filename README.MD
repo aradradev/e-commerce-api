@@ -26,7 +26,7 @@
 
 # 📖 E-Commerce-API <a name="about-project"></a>
 
-**E-Commerce-API** E-Commerce-API is to help store keepers to make their business online with their customers.
+**E-Commerce-API** E-Commerce-API app is to help store keepers to make their business online with their customers.
 
 ## 🛠 Built With <a name="built-with"></a>
 

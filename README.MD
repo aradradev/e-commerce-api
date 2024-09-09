@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>TE-Commerce-API</b></h3>
+  <h3><b>ThE-Commerce-API</b></h3>
 </div>
 
 # 📗 Table of Contents
